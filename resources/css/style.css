@@ -249,8 +249,7 @@ header .mobile {
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 32px 32px 187px 32px;
-
+  margin: 0 auto;
 }
 
 .image-container img {
@@ -263,6 +262,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin-top: 40px;
 }
 
 .feature h3 {
@@ -270,6 +270,10 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+.feature content {
+  padding: 2.5rem 0;
 }
 
 @media only screen and (max-width: 890px) {
@@ -303,6 +307,10 @@ header .mobile {
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
+
+#filters-section .images-container {
+  display: flex;
+  flex-direction: row;  }
 
 #filters-section .content {
   padding: 0 .625rem;
@@ -355,6 +363,7 @@ header .mobile {
   #filters-section .extra {
     display: none;
   }
+
 }
 
 /* Quotes Section */
