@@ -117,13 +117,41 @@ header .mobile {
     padding: 0;
   }
 
+  @media screen and (min-width: 820px) {
   header .mobile .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
-
   }
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
 }
 
 /* Sign Up Section */
@@ -372,17 +400,18 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: Palatino, 'Palatino Linotype', serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+
 }
 
 #quotes-section quote-citation {
